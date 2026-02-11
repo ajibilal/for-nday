@@ -252,21 +252,31 @@
             font-size: 1.5rem;
         }
         @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.5rem; }
-            .flip-card { width: 250px; height: 150px; }
-            .gallery { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
-            .section { padding: 10px; }
-            #question > div { height: 150px; min-height: 150px; }
-            button { padding: 12px 20px; font-size: 1rem; }
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            p { font-size: 1.2rem; }
+            .flip-card { width: 220px; height: 160px; margin: 10px; }
+            .gallery { grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 95vw; }
+            .gallery img { height: 120px; }
+            .section { padding: 20px; }
+            .timeline-item { padding: 20px; max-width: 95vw; }
+            .popup-content { max-width: 95vw; padding: 25px; }
+            #question > div { height: 180px; min-height: 180px; }
+            button { padding: 15px 25px; font-size: 1.1rem; }
         }
         @media (max-width: 480px) {
             h1 { font-size: 1.8rem; }
             h2 { font-size: 1.3rem; }
-            .flip-card { width: 200px; height: 120px; }
-            .gallery { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+            p { font-size: 1rem; max-width: 95vw; }
+            .flip-card { width: 85vw; height: 120px; margin: 8px auto; }
+            .gallery { grid-template-columns: repeat(1, 1fr); gap: 12px; max-width: 95vw; }
+            .gallery img { height: 90px; }
+            .section { padding: 12px; min-height: 100vh; }
+            .timeline-item { padding: 12px; max-width: 95vw; }
+            .popup-content { max-width: 95vw; padding: 15px; }
             #question > div { height: 120px; min-height: 120px; }
-            button { padding: 10px 15px; font-size: 0.9rem; }
+            button { padding: 10px 18px; font-size: 0.9rem; margin: 4px; }
+            .music-toggle { bottom: 12px; right: 12px; padding: 8px; font-size: 1.1rem; }
         }
     </style>
 </head>
@@ -614,4 +624,3 @@
     </script>
 </body>
 </html>
-
