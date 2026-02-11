@@ -251,35 +251,7 @@
             cursor: pointer;
             font-size: 1.5rem;
         }
-        @media (max-width: 768px) {
-            h1 { font-size: 1.0rem; }
-            h2 { font-size: 0.9rem; }
-            p { font-size: 0.8rem; }
-            .flip-card { width: 120px; height: 80px; margin: 3px; }
-            .gallery { grid-template-columns: repeat(2, 1fr); gap: 5px; max-width: 95vw; }
-            .gallery img { height: 50px; }
-            .section { padding: 6px; min-height: auto; }
-            .timeline-item { padding: 6px; max-width: 95vw; }
-            .popup-content { max-width: 95vw; padding: 10px; }
-            #question > div { height: auto; min-height: auto; }
-            button { padding: 5px 8px; font-size: 0.7rem; }
-            .floating-hearts { display: none; }
-        }
-        @media (max-width: 480px) {
-            h1 { font-size: 0.8rem; }
-            h2 { font-size: 0.75rem; }
-            p { font-size: 0.7rem; max-width: 95vw; }
-            .flip-card { width: 70vw; height: 60px; margin: 2px auto; }
-            .gallery { grid-template-columns: repeat(1, 1fr); gap: 3px; max-width: 95vw; }
-            .gallery img { height: 50px; }
-            .section { padding: 4px; min-height: auto; }
-            .timeline-item { padding: 4px; max-width: 95vw; }
-            .popup-content { max-width: 95vw; padding: 8px; }
-            #question > div { height: auto; min-height: auto; }
-            button { padding: 4px 6px; font-size: 0.6rem; margin: 1px; }
-            .music-toggle { bottom: 3px; right: 3px; padding: 2px; font-size: 0.6rem; }
-            .floating-hearts { display: none; }
-        }
+
     </style>
 </head>
 <body>
@@ -383,14 +355,10 @@
     <div class="section" id="gallery">
         <h2>Our Memories</h2>
         <div class="gallery">
-            <img src="WhatsApp Image 2026-02-10 at 22.54.51.jpeg" alt="Memory 1" onclick="showPopup('popup-gallery1')">
-            <img src="WhatsApp Image 2026-02-10 at 22.57.27.jpeg" alt="Memory 2" onclick="showPopup('popup-gallery2')">
-            <img src="WhatsApp Image 2026-02-10 at 22.57.31.jpeg" alt="Memory 3" onclick="showPopup('popup-gallery3')">
-            <img src="WhatsApp Image 2026-02-10 at 22.57.22.jpeg" alt="Memory 4" onclick="showPopup('popup-gallery4')">
-            <img src="WhatsApp Image 2026-02-10 at 22.57.25.jpeg" alt="Memory 5" onclick="showPopup('popup-gallery5')">
-            <img src="WhatsApp Image 2026-02-10 at 22.57.30.jpeg" alt="Memory 6" onclick="showPopup('popup-gallery6')">
+            <img src="WhatsApp Image 2026-02-10 at 22.54.51.jpeg" alt="Memory 1" onclick="nextSection('letter')">
+            <img src="WhatsApp Image 2026-02-10 at 22.57.27.jpeg" alt="Memory 2" onclick="nextSection('letter')">
+            <img src="WhatsApp Image 2026-02-10 at 22.57.31.jpeg" alt="Memory 3" onclick="nextSection('letter')">
         </div>
-        <button onclick="nextSection('letter')">Next</button>
     </div>
 
     <!-- Love Letter -->
